@@ -1,0 +1,808 @@
+/* CUSTOM */
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+/* clearfix */
+/* line 7, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* display none until init */
+/* line 16, ../scss/owl/_owl.carousel.scss */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+
+/* line 22, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 27, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 32, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* line 40, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-item {
+  float: left;
+}
+
+/* line 43, ../scss/owl/_owl.carousel.scss */
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+/* line 47, ../scss/owl/_owl.carousel.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* mouse grab icon */
+/* line 57, ../scss/owl/_owl.carousel.scss */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+/* line 62, ../scss/owl/_owl.carousel.scss */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+/* line 6, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+/* line 13, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 30, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 38, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 43, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+/* line 56, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+/* line 64, ../scss/owl/_owl.theme.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+/* line 76, ../scss/owl/_owl.theme.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+/* line 6, ../scss/owl/_owl.transitions.scss */
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+
+/* fade */
+/* line 16, ../scss/owl/_owl.transitions.scss */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+
+/* line 22, ../scss/owl/_owl.transitions.scss */
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+
+/* backSlide */
+/* line 28, ../scss/owl/_owl.transitions.scss */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+
+/* line 33, ../scss/owl/_owl.transitions.scss */
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+
+/* goDown */
+/* line 39, ../scss/owl/_owl.transitions.scss */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+
+/* line 44, ../scss/owl/_owl.transitions.scss */
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+
+/* scaleUp */
+/* line 50, ../scss/owl/_owl.transitions.scss */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+/* line 56, ../scss/owl/_owl.transitions.scss */
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes empty {
+  0% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@-moz-keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@keyframes backSlideOut {
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+  }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+@keyframes backSlideIn {
+  0%, 25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
+  }
+}
+@-webkit-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes scaleToFade {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes goDown {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes goDown {
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+@keyframes goDown {
+  from {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+@-moz-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+@keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@-webkit-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+@-moz-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+@keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+/* line 6, ../scss/app.scss */
+html, body, p, div, h1, h2, h3, h4, h5, a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+
+/* line 10, ../scss/app.scss */
+html, body, p, div {
+  font-weight: 300;
+}
+
+/* HEADER */
+/* DEFAULT NAV */
+/* line 16, ../scss/app.scss */
+#masthead.alt .navbar-default .navbar-nav > li > a {
+  color: rgba(30, 91, 163, 0.6);
+  line-height: normal;
+  padding: 10px 20px;
+}
+
+@-moz-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-ms-keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes reveal-header {
+  0% {
+    top: -5em;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 63, ../scss/app.scss */
+#masthead {
+  background: rgba(34, 34, 34, 0.6);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+/* line 71, ../scss/app.scss */
+#masthead nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 78, ../scss/app.scss */
+#masthead.reveal {
+  -moz-animation: reveal-header 0.5s;
+  -webkit-animation: reveal-header 0.5s;
+  -ms-animation: reveal-header 0.5s;
+  animation: reveal-header 0.5s;
+}
+/* line 85, ../scss/app.scss */
+#masthead.alt {
+  -moz-animation: none;
+  -webkit-animation: none;
+  -ms-animation: none;
+  animation: none;
+  background: none;
+  color: #666;
+  position: absolute;
+}
+
+/* line 96, ../scss/app.scss */
+.top-bar-section {
+  color: #fff;
+  padding-right: 30px;
+}
+/* line 99, ../scss/app.scss */
+.top-bar-section li {
+  color: #fff;
+  list-style: disc;
+  padding: 0;
+  margin: 0 0 0 30px;
+  width: auto;
+}
+/* line 105, ../scss/app.scss */
+.top-bar-section li:first-child {
+  list-style: none;
+}
+/* line 110, ../scss/app.scss */
+.top-bar-section li:not(.has-form) {
+  background: none;
+}
+/* line 112, ../scss/app.scss */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 10px;
+}
+/* line 117, ../scss/app.scss */
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: none;
+}
+/* line 123, ../scss/app.scss */
+.top-bar-section li:not(.has-form).active a:not(.button) {
+  padding: 0;
+  background: none;
+}
+/* line 127, ../scss/app.scss */
+.top-bar-section li:not(.has-form).active a:not(.button):hover {
+  background: none;
+}
+/* line 133, ../scss/app.scss */
+.top-bar-section li:not(.has-form):before {
+  color: #fff;
+}
+
+/* line 140, ../scss/app.scss */
+.large-bg {
+  background: url(../img/top-background.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+/* line 149, ../scss/app.scss */
+.large-bg .overlay.head-cover {
+  background: url(../img/pattern.png);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 2;
+}
+/* line 163, ../scss/app.scss */
+.large-bg .head-content {
+  display: block;
+  z-index: 9;
+  position: absolute;
+  margin: -10% 0 0 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+/* line 173, ../scss/app.scss */
+.large-bg .head-text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+/* line 177, ../scss/app.scss */
+.large-bg .head-text small {
+  font-size: 18px;
+  color: #fff;
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+/* line 185, ../scss/app.scss */
+.large-bg .head-text small:after {
+  content: " ";
+  height: 1px;
+  width: 100px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+/* line 196, ../scss/app.scss */
+.large-bg .head-text small:before {
+  content: " ";
+  height: 1px;
+  width: 100px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+/* line 207, ../scss/app.scss */
+.large-bg .head-text h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* line 218, ../scss/app.scss */
+.brand-logo {
+  width: 70%;
+  margin: 0 auto;
+}
+/* line 221, ../scss/app.scss */
+.brand-logo .owl-carousel .owl-item {
+  text-align: center;
+}
+
+/* line 226, ../scss/app.scss */
+.scroll-down {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+}
+
+/* OWL IMG */
+/* line 239, ../scss/app.scss */
+#owlize .item img {
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  filter: gray;
+  /* IE6-9 */
+  -o-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 253, ../scss/app.scss */
+#owlize .item:hover img {
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+  -o-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* SECTION */
+/* line 264, ../scss/app.scss */
+.products {
+  background: url(../img/sect2.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+/* line 273, ../scss/app.scss */
+.products .products-wrap .product {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* line 279, ../scss/app.scss */
+.partner, .license {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* line 285, ../scss/app.scss */
+.heading-sect {
+  text-align: center;
+  padding: 50px 0;
+}
+/* line 289, ../scss/app.scss */
+.heading-sect h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 295, ../scss/app.scss */
+.heading-sect .subtxt {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 300, ../scss/app.scss */
+.heading-sect.heading-bg {
+  color: #fff;
+  background: url(../img/heading.png) no-repeat;
+  margin-bottom: 60px;
+}
+/* line 305, ../scss/app.scss */
+.heading-sect.heading-bg h2 {
+  color: #fff;
+}
+
+/* line 311, ../scss/app.scss */
+.padded {
+  padding: 80px 0;
+}
+
+/* line 316, ../scss/app.scss */
+.wrap-3s {
+  text-align: center;
+}
+/* line 319, ../scss/app.scss */
+.wrap-3s .block-3s {
+  color: #fff;
+  font-weight: 900;
+  font-size: 40px;
+  padding: 100px 0;
+}
+/* line 326, ../scss/app.scss */
+.wrap-3s .customs {
+  background: url(../img/1.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 331, ../scss/app.scss */
+.wrap-3s .teams {
+  background: url(../img/2.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 336, ../scss/app.scss */
+.wrap-3s .causes {
+  background: url(../img/3.jpg) no-repeat;
+  background-size: cover;
+}
