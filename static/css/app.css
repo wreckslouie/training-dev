@@ -806,3 +806,48 @@ html, body, p, div {
   background: url(../img/3.jpg) no-repeat;
   background-size: cover;
 }
+
+/* line 342, ../scss/app.scss */
+.contact {
+  color: #fff;
+}
+/* line 346, ../scss/app.scss */
+.contact .contactimg {
+  background: url(../img/contact-bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+/* line 355, ../scss/app.scss */
+.contact .callUsGroup {
+  margin-top: 300px;
+  margin-bottom: 300px;
+  width: 50%;
+  vertical-align: middle;
+}
+/* line 366, ../scss/app.scss */
+.contact .bottom_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  float: top;
+}
+/* line 374, ../scss/app.scss */
+.contact .bottom_subtitle {
+  float: bottom;
+}
+/* line 379, ../scss/app.scss */
+.contact .bottom_icon {
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 386, ../scss/app.scss */
+.contact .bottom_title_container {
+  overflow: inherit;
+  float: left;
+  text-align: right;
+  width: 200px;
+  margin-left: 150px;
+}

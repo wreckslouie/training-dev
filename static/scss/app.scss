@@ -338,3 +338,59 @@ html, body, p, div{
 		background-size: cover;
 	}
 }
+
+.contact
+{
+	color: #fff;
+
+		.contactimg{
+		background:url(../img/contact-bg.png) no-repeat;
+		background-size: cover;
+		position: relative;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		
+		}
+		.callUsGroup
+		{
+			
+			
+			margin-top: 300px;
+			margin-bottom: 300px;
+			width:50%;
+			vertical-align:middle;
+		
+		}
+
+		.bottom_title
+		{
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 10px;
+			float:top;
+		}
+
+		.bottom_subtitle
+		{
+			float:bottom;
+		}
+
+		.bottom_icon
+		{
+			vertical-align: middle;
+			text-align: center;
+
+		}
+
+		.bottom_title_container
+		{
+			overflow:inherit;
+			float:left;
+			text-align:right;
+			width:200px;
+			margin-left:150px;
+		}
+
+
+}
