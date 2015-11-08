@@ -840,7 +840,7 @@ html, body, p, div {
 .contact .bottom_title {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   float: top;
 }
 /* line 389, ../scss/app.scss */
@@ -871,14 +871,14 @@ html, body, p, div {
 /* line 421, ../scss/app.scss */
 .form_column_right {
   float: right;
-  width: 250px;
+  width: 333px;
 }
 
 /* line 429, ../scss/app.scss */
 form {
   margin-left: -247px;
   margin-right: auto;
-  width: 530px;
+  width: 600px;
   height: 333px;
   overflow: hidden;
   text-align: center;
@@ -971,7 +971,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 /* line 521, ../scss/app.scss */
 .btn {
   width: 100%;
-  height: 30px;
+  height: 45px;
   border: 0px;
   float: right;
   background: #B71C1C;
@@ -1056,6 +1056,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 /* line 606, ../scss/app.scss */
 .footer_bg .icon_space {
-  padding: 0 5px 5px 5px;
+  padding: 0 20px 10px 5px;
   color: #474747;
 }
