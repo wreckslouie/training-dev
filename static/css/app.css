@@ -851,8 +851,9 @@ html, body, p, div {
 .contact .bottom_icon {
   vertical-align: middle;
   text-align: center;
+  margin: 0 0px;
 }
-/* line 401, ../scss/app.scss */
+/* line 402, ../scss/app.scss */
 .contact .bottom_title_container {
   overflow: inherit;
   float: left;
@@ -861,20 +862,20 @@ html, body, p, div {
   /* margin-left:150px; */
 }
 
-/* line 413, ../scss/app.scss */
+/* line 414, ../scss/app.scss */
 .form_column_left {
   float: left;
   width: 250px;
   height: auto;
 }
 
-/* line 421, ../scss/app.scss */
+/* line 422, ../scss/app.scss */
 .form_column_right {
   float: right;
   width: 333px;
 }
 
-/* line 429, ../scss/app.scss */
+/* line 430, ../scss/app.scss */
 form {
   margin-left: -247px;
   margin-right: auto;
@@ -885,7 +886,7 @@ form {
   float: left;
 }
 
-/* line 439, ../scss/app.scss */
+/* line 440, ../scss/app.scss */
 textarea {
   background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px;
   height: 94px;
@@ -900,12 +901,12 @@ textarea {
   overflow: hidden;
 }
 
-/* line 452, ../scss/app.scss */
+/* line 453, ../scss/app.scss */
 textarea[type=message] {
   height: 94px;
 }
 
-/* line 457, ../scss/app.scss */
+/* line 458, ../scss/app.scss */
 input {
   width: 276px;
   height: 48px;
@@ -920,13 +921,13 @@ input {
   background-clip: padding-box;
 }
 
-/* line 471, ../scss/app.scss */
+/* line 472, ../scss/app.scss */
 input[type=submit] {
   cursor: pointer;
   font-size: 12px;
 }
 
-/* line 476, ../scss/app.scss */
+/* line 477, ../scss/app.scss */
 input.name {
   background: rgba(255, 255, 255, 0);
   border: 0px;
@@ -935,40 +936,40 @@ input.name {
   color: #fff;
 }
 
-/* line 485, ../scss/app.scss */
+/* line 486, ../scss/app.scss */
 input.message {
   background: rgba(255, 255, 255, 0);
   height: 94px;
 }
 
-/* line 491, ../scss/app.scss */
+/* line 492, ../scss/app.scss */
 ::-webkit-input-placeholder {
   color: #fff;
 }
 
-/* line 496, ../scss/app.scss */
+/* line 497, ../scss/app.scss */
 :-moz-placeholder {
   color: #fff;
 }
 
-/* line 501, ../scss/app.scss */
+/* line 502, ../scss/app.scss */
 ::-moz-placeholder {
   color: #fff;
 }
 
-/* line 506, ../scss/app.scss */
+/* line 507, ../scss/app.scss */
 :-ms-input-placeholder {
   color: #fff;
 }
 
-/* line 511, ../scss/app.scss */
+/* line 512, ../scss/app.scss */
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   outline: 0px;
 }
 
-/* line 521, ../scss/app.scss */
+/* line 522, ../scss/app.scss */
 .btn {
   width: 100%;
   height: 45px;
@@ -977,13 +978,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background: #B71C1C;
 }
 
-/* line 530, ../scss/app.scss */
+/* line 531, ../scss/app.scss */
 .btn:hover {
   border: 0px;
   background: #921313;
 }
 
-/* line 536, ../scss/app.scss */
+/* line 537, ../scss/app.scss */
 .btn:active {
   margin-top: 1px;
   text-shadow: #333333 0 -1px 0;
@@ -996,7 +997,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
 }
 
-/* line 548, ../scss/app.scss */
+/* line 549, ../scss/app.scss */
 .footer_bg {
   background-color: #222222;
   text-align: center;
@@ -1004,57 +1005,57 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   padding: 30px 0px 60px 0;
   color: #474747;
 }
-/* line 555, ../scss/app.scss */
+/* line 556, ../scss/app.scss */
 .footer_bg ul {
   text-transform: uppercase;
   display: inline-flex;
 }
-/* line 560, ../scss/app.scss */
+/* line 561, ../scss/app.scss */
 .footer_bg ul li {
   list-style: disc;
   padding: 0;
   margin: 0 0 0 30px;
   width: auto;
 }
-/* line 566, ../scss/app.scss */
+/* line 567, ../scss/app.scss */
 .footer_bg ul li:first-child {
   list-style: none;
 }
-/* line 571, ../scss/app.scss */
+/* line 572, ../scss/app.scss */
 .footer_bg ul li a {
   color: #474747;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 577, ../scss/app.scss */
+/* line 578, ../scss/app.scss */
 .footer_bg li:not(.has-form) {
   background: none;
 }
-/* line 579, ../scss/app.scss */
+/* line 580, ../scss/app.scss */
 .footer_bg li:not(.has-form) a:not(.button) {
   background: none;
   text-transform: uppercase;
   font-size: 14px;
   padding: 0 10px;
 }
-/* line 584, ../scss/app.scss */
+/* line 585, ../scss/app.scss */
 .footer_bg li:not(.has-form) a:not(.button):hover {
   background: none;
 }
-/* line 590, ../scss/app.scss */
+/* line 591, ../scss/app.scss */
 .footer_bg li:not(.has-form).active a:not(.button) {
   padding: 0;
   background: none;
 }
-/* line 594, ../scss/app.scss */
+/* line 595, ../scss/app.scss */
 .footer_bg li:not(.has-form).active a:not(.button):hover {
   background: none;
 }
-/* line 600, ../scss/app.scss */
+/* line 601, ../scss/app.scss */
 .footer_bg li:not(.has-form):before {
   color: #474747;
 }
-/* line 606, ../scss/app.scss */
+/* line 607, ../scss/app.scss */
 .footer_bg .icon_space {
   padding: 0 20px 10px 5px;
   color: #474747;
