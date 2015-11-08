@@ -603,7 +603,7 @@ html, body, p, div {
   color: #fff;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .large-bg {
   background: url(../img/top-background.png) no-repeat;
   background-size: cover;
@@ -612,7 +612,7 @@ html, body, p, div {
   display: block;
   width: 100%;
 }
-/* line 149, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
 .large-bg .overlay.head-cover {
   background: url(../img/pattern.png);
   position: absolute;
@@ -625,7 +625,7 @@ html, body, p, div {
   opacity: 0.7;
   z-index: 2;
 }
-/* line 163, ../scss/app.scss */
+/* line 164, ../scss/app.scss */
 .large-bg .head-content {
   display: block;
   z-index: 9;
@@ -635,13 +635,13 @@ html, body, p, div {
   right: 0;
   top: 50%;
 }
-/* line 173, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .large-bg .head-text {
   position: relative;
   color: #fff;
   text-align: center;
 }
-/* line 177, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 .large-bg .head-text small {
   font-size: 18px;
   color: #fff;
@@ -650,7 +650,7 @@ html, body, p, div {
   margin: 0 auto;
   display: block;
 }
-/* line 185, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 .large-bg .head-text small:after {
   content: " ";
   height: 1px;
@@ -661,7 +661,7 @@ html, body, p, div {
   top: 13px;
   left: 0;
 }
-/* line 196, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .large-bg .head-text small:before {
   content: " ";
   height: 1px;
@@ -672,7 +672,7 @@ html, body, p, div {
   top: 13px;
   right: 0;
 }
-/* line 207, ../scss/app.scss */
+/* line 208, ../scss/app.scss */
 .large-bg .head-text h1 {
   font-size: 90px;
   letter-spacing: 2px;
@@ -681,17 +681,17 @@ html, body, p, div {
   font-weight: 700;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 .brand-logo {
   width: 70%;
   margin: 0 auto;
 }
-/* line 221, ../scss/app.scss */
+/* line 222, ../scss/app.scss */
 .brand-logo .owl-carousel .owl-item {
   text-align: center;
 }
 
-/* line 226, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 .scroll-down {
   position: absolute;
   z-index: 9;
@@ -702,7 +702,7 @@ html, body, p, div {
 }
 
 /* OWL IMG */
-/* line 239, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 #owlize .item img {
   filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
   /* Firefox 10+, Firefox on Android */
@@ -718,7 +718,7 @@ html, body, p, div {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 253, ../scss/app.scss */
+/* line 254, ../scss/app.scss */
 #owlize .item:hover img {
   filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
   -o-filter: grayscale(0%);
@@ -727,7 +727,7 @@ html, body, p, div {
 }
 
 /* SECTION */
-/* line 264, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .products {
   background: url(../img/sect2.png) no-repeat;
   background-size: cover;
@@ -736,82 +736,82 @@ html, body, p, div {
   display: block;
   width: 100%;
 }
-/* line 273, ../scss/app.scss */
+/* line 274, ../scss/app.scss */
 .products .products-wrap .product {
   text-align: center;
   margin-bottom: 25px;
 }
 
-/* line 279, ../scss/app.scss */
+/* line 280, ../scss/app.scss */
 .partner, .license {
   text-align: center;
   margin-bottom: 25px;
 }
 
-/* line 285, ../scss/app.scss */
+/* line 286, ../scss/app.scss */
 .heading-sect {
   text-align: center;
   padding: 50px 0;
 }
-/* line 289, ../scss/app.scss */
+/* line 290, ../scss/app.scss */
 .heading-sect h2 {
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 295, ../scss/app.scss */
+/* line 296, ../scss/app.scss */
 .heading-sect .subtxt {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 300, ../scss/app.scss */
+/* line 301, ../scss/app.scss */
 .heading-sect.heading-bg {
   color: #fff;
   background: url(../img/heading.png) no-repeat;
   margin-bottom: 60px;
 }
-/* line 305, ../scss/app.scss */
+/* line 306, ../scss/app.scss */
 .heading-sect.heading-bg h2 {
   color: #fff;
 }
 
-/* line 311, ../scss/app.scss */
+/* line 312, ../scss/app.scss */
 .padded {
   padding: 80px 0;
 }
 
-/* line 316, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 .wrap-3s {
   text-align: center;
 }
-/* line 319, ../scss/app.scss */
+/* line 320, ../scss/app.scss */
 .wrap-3s .block-3s {
   color: #fff;
   font-weight: 900;
   font-size: 40px;
   padding: 100px 0;
 }
-/* line 326, ../scss/app.scss */
+/* line 327, ../scss/app.scss */
 .wrap-3s .customs {
   background: url(../img/1.jpg) no-repeat;
   background-size: cover;
 }
-/* line 331, ../scss/app.scss */
+/* line 332, ../scss/app.scss */
 .wrap-3s .teams {
   background: url(../img/2.jpg) no-repeat;
   background-size: cover;
 }
-/* line 336, ../scss/app.scss */
+/* line 337, ../scss/app.scss */
 .wrap-3s .causes {
   background: url(../img/3.jpg) no-repeat;
   background-size: cover;
 }
 
-/* line 342, ../scss/app.scss */
+/* line 343, ../scss/app.scss */
 .contact {
   color: #fff;
 }
-/* line 346, ../scss/app.scss */
+/* line 347, ../scss/app.scss */
 .contact .contactimg {
   background: url(../img/contact-bg.png) no-repeat;
   background-size: cover;
@@ -820,39 +820,39 @@ html, body, p, div {
   display: block;
   width: 100%;
 }
-/* line 356, ../scss/app.scss */
+/* line 357, ../scss/app.scss */
 .contact .contact_containter {
   margin-top: 200px;
   margin-bottom: 200px;
 }
-/* line 361, ../scss/app.scss */
+/* line 362, ../scss/app.scss */
 .contact .contact_containter .callUsGroup {
   width: 400px;
   vertical-align: middle;
   float: left;
 }
-/* line 370, ../scss/app.scss */
+/* line 371, ../scss/app.scss */
 .contact .contact_containter .contact_form {
   float: right;
   width: 350px;
 }
-/* line 380, ../scss/app.scss */
+/* line 381, ../scss/app.scss */
 .contact .bottom_title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
   float: top;
 }
-/* line 388, ../scss/app.scss */
+/* line 389, ../scss/app.scss */
 .contact .bottom_subtitle {
   float: bottom;
 }
-/* line 393, ../scss/app.scss */
+/* line 394, ../scss/app.scss */
 .contact .bottom_icon {
   vertical-align: middle;
   text-align: center;
 }
-/* line 400, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 .contact .bottom_title_container {
   overflow: inherit;
   float: left;
@@ -861,20 +861,20 @@ html, body, p, div {
   /* margin-left:150px; */
 }
 
-/* line 412, ../scss/app.scss */
+/* line 413, ../scss/app.scss */
 .form_column_left {
   float: left;
   width: 250px;
   height: auto;
 }
 
-/* line 420, ../scss/app.scss */
+/* line 421, ../scss/app.scss */
 .form_column_right {
   float: right;
   width: 250px;
 }
 
-/* line 428, ../scss/app.scss */
+/* line 429, ../scss/app.scss */
 form {
   margin-left: -247px;
   margin-right: auto;
@@ -885,10 +885,10 @@ form {
   float: left;
 }
 
-/* line 438, ../scss/app.scss */
+/* line 439, ../scss/app.scss */
 textarea {
   background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px;
-  height: 200px;
+  height: 94px;
   border-bottom: 1px solid white;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -901,6 +901,11 @@ textarea {
 }
 
 /* line 452, ../scss/app.scss */
+textarea[type=message] {
+  height: 94px;
+}
+
+/* line 457, ../scss/app.scss */
 input {
   width: 276px;
   height: 48px;
@@ -915,13 +920,13 @@ input {
   background-clip: padding-box;
 }
 
-/* line 466, ../scss/app.scss */
+/* line 471, ../scss/app.scss */
 input[type=submit] {
   cursor: pointer;
   font-size: 12px;
 }
 
-/* line 471, ../scss/app.scss */
+/* line 476, ../scss/app.scss */
 input.name {
   background: rgba(255, 255, 255, 0);
   border: 0px;
@@ -930,40 +935,40 @@ input.name {
   color: #fff;
 }
 
-/* line 480, ../scss/app.scss */
+/* line 485, ../scss/app.scss */
 input.message {
   background: rgba(255, 255, 255, 0);
-  height: 200px;
+  height: 94px;
 }
 
-/* line 486, ../scss/app.scss */
+/* line 491, ../scss/app.scss */
 ::-webkit-input-placeholder {
   color: #fff;
 }
 
-/* line 491, ../scss/app.scss */
+/* line 496, ../scss/app.scss */
 :-moz-placeholder {
   color: #fff;
 }
 
-/* line 496, ../scss/app.scss */
+/* line 501, ../scss/app.scss */
 ::-moz-placeholder {
   color: #fff;
 }
 
-/* line 501, ../scss/app.scss */
+/* line 506, ../scss/app.scss */
 :-ms-input-placeholder {
   color: #fff;
 }
 
-/* line 506, ../scss/app.scss */
+/* line 511, ../scss/app.scss */
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   outline: 0px;
 }
 
-/* line 515, ../scss/app.scss */
+/* line 521, ../scss/app.scss */
 .btn {
   width: 100%;
   height: 30px;
@@ -972,13 +977,13 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   background: #B71C1C;
 }
 
-/* line 524, ../scss/app.scss */
+/* line 530, ../scss/app.scss */
 .btn:hover {
   border: 0px;
   background: #921313;
 }
 
-/* line 530, ../scss/app.scss */
+/* line 536, ../scss/app.scss */
 .btn:active {
   margin-top: 1px;
   text-shadow: #333333 0 -1px 0;
@@ -991,16 +996,66 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
 }
 
-/* line 542, ../scss/app.scss */
+/* line 548, ../scss/app.scss */
 .footer_bg {
   background-color: #222222;
   text-align: center;
   margin: auto;
-  padding: 30px;
-}
-/* line 548, ../scss/app.scss */
-.footer_bg ul.a {
-  text-transform: uppercase;
+  padding: 30px 0px 60px 0;
   color: #474747;
+}
+/* line 555, ../scss/app.scss */
+.footer_bg ul {
+  text-transform: uppercase;
+  display: inline-flex;
+}
+/* line 560, ../scss/app.scss */
+.footer_bg ul li {
+  list-style: disc;
+  padding: 0;
+  margin: 0 0 0 30px;
+  width: auto;
+}
+/* line 566, ../scss/app.scss */
+.footer_bg ul li:first-child {
+  list-style: none;
+}
+/* line 571, ../scss/app.scss */
+.footer_bg ul li a {
+  color: #474747;
+  font-weight: bold;
   text-decoration: none;
+}
+/* line 577, ../scss/app.scss */
+.footer_bg li:not(.has-form) {
+  background: none;
+}
+/* line 579, ../scss/app.scss */
+.footer_bg li:not(.has-form) a:not(.button) {
+  background: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 10px;
+}
+/* line 584, ../scss/app.scss */
+.footer_bg li:not(.has-form) a:not(.button):hover {
+  background: none;
+}
+/* line 590, ../scss/app.scss */
+.footer_bg li:not(.has-form).active a:not(.button) {
+  padding: 0;
+  background: none;
+}
+/* line 594, ../scss/app.scss */
+.footer_bg li:not(.has-form).active a:not(.button):hover {
+  background: none;
+}
+/* line 600, ../scss/app.scss */
+.footer_bg li:not(.has-form):before {
+  color: #474747;
+}
+/* line 606, ../scss/app.scss */
+.footer_bg .icon_space {
+  padding: 0 5px 5px 5px;
+  color: #474747;
 }

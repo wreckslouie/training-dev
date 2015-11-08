@@ -137,6 +137,7 @@ html, body, p, div{
 }
 
 
+
 .large-bg{
 	background:url(../img/top-background.png) no-repeat;
 	background-size: cover;
@@ -437,7 +438,7 @@ form {
 
 textarea{
 	background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px; 
-    height: 200px;
+    height: 94px;
     border-bottom: 1px solid white;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
@@ -448,6 +449,10 @@ textarea{
     padding-top:12px;
     overflow:hidden;
 }
+textarea[type=message]{
+	
+	height: 94px;
+	}
 
 input {
     width: 276px;
@@ -479,7 +484,7 @@ input.name {
 
 input.message {
 	  background: rgba(255, 255, 255, 0);
-	  height: 200px;
+	  height:94px;
 	  
 }
 
@@ -508,6 +513,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	background-color: rgba(0, 0, 0, 0.2);
     overflow: hidden; 
   	outline: 0px;
+ 
   	
 }
 
@@ -543,12 +549,62 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 	background-color: #222222;
 	text-align: center;
 	margin: auto;
-	padding: 30px;
+	padding: 30px 0px 60px 0;
+	color: #474747; 
 
-	ul.a {
-    
+	ul {
     text-transform: uppercase;
-    color: #474747;
-    text-decoration: none;
+    display:inline-flex;
+  	}
+
+	ul li{
+	
+		list-style: disc;
+		padding: 0;
+		margin: 0 0 0 30px;
+		width: auto;
+		&:first-child{
+			list-style: none;
+		}
 	}
+
+	ul li a{
+		color: #474747; 
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	li:not(.has-form) {
+		background: none;
+		a:not(.button) {
+			background: none;
+			text-transform: uppercase;
+			font-size: 14px;
+			padding: 0 10px;
+			&:hover{
+				background: none;
+			}
+		}
+
+		&.active{
+			a:not(.button) {
+				padding: 0;
+				background: none;
+
+				&:hover{
+					background: none;
+				}
+			}
+		}
+
+		&:before{
+			 color: #474747; 
+				}
+	
+	}
+
+	.icon_space{
+		padding: 0 5px 5px 5px;
+		color: #474747;
+			}
 }
