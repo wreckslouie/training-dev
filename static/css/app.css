@@ -820,34 +820,187 @@ html, body, p, div {
   display: block;
   width: 100%;
 }
-/* line 355, ../scss/app.scss */
-.contact .callUsGroup {
-  margin-top: 300px;
-  margin-bottom: 300px;
-  width: 50%;
-  vertical-align: middle;
+/* line 356, ../scss/app.scss */
+.contact .contact_containter {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
-/* line 366, ../scss/app.scss */
+/* line 361, ../scss/app.scss */
+.contact .contact_containter .callUsGroup {
+  width: 400px;
+  vertical-align: middle;
+  float: left;
+}
+/* line 370, ../scss/app.scss */
+.contact .contact_containter .contact_form {
+  float: right;
+  width: 350px;
+}
+/* line 380, ../scss/app.scss */
 .contact .bottom_title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
   float: top;
 }
-/* line 374, ../scss/app.scss */
+/* line 388, ../scss/app.scss */
 .contact .bottom_subtitle {
   float: bottom;
 }
-/* line 379, ../scss/app.scss */
+/* line 393, ../scss/app.scss */
 .contact .bottom_icon {
   vertical-align: middle;
   text-align: center;
 }
-/* line 386, ../scss/app.scss */
+/* line 400, ../scss/app.scss */
 .contact .bottom_title_container {
   overflow: inherit;
   float: left;
   text-align: right;
   width: 200px;
-  margin-left: 150px;
+  /* margin-left:150px; */
+}
+
+/* line 412, ../scss/app.scss */
+.form_column_left {
+  float: left;
+  width: 250px;
+  height: auto;
+}
+
+/* line 420, ../scss/app.scss */
+.form_column_right {
+  float: right;
+  width: 250px;
+}
+
+/* line 428, ../scss/app.scss */
+form {
+  margin-left: -247px;
+  margin-right: auto;
+  width: 530px;
+  height: 333px;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+
+/* line 438, ../scss/app.scss */
+textarea {
+  background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px;
+  height: 200px;
+  border-bottom: 1px solid white;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: block;
+  color: #fff;
+  padding-right: 20px;
+  padding-top: 12px;
+  overflow: hidden;
+}
+
+/* line 452, ../scss/app.scss */
+input {
+  width: 276px;
+  height: 48px;
+  border-bottom: 1px solid white;
+  display: block;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/* line 466, ../scss/app.scss */
+input[type=submit] {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* line 471, ../scss/app.scss */
+input.name {
+  background: rgba(255, 255, 255, 0);
+  border: 0px;
+  border-bottom: 1px solid white;
+  margin-bottom: 26px;
+  color: #fff;
+}
+
+/* line 480, ../scss/app.scss */
+input.message {
+  background: rgba(255, 255, 255, 0);
+  height: 200px;
+}
+
+/* line 486, ../scss/app.scss */
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+/* line 491, ../scss/app.scss */
+:-moz-placeholder {
+  color: #fff;
+}
+
+/* line 496, ../scss/app.scss */
+::-moz-placeholder {
+  color: #fff;
+}
+
+/* line 501, ../scss/app.scss */
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+/* line 506, ../scss/app.scss */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  outline: 0px;
+}
+
+/* line 515, ../scss/app.scss */
+.btn {
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  float: right;
+  background: #B71C1C;
+}
+
+/* line 524, ../scss/app.scss */
+.btn:hover {
+  border: 0px;
+  background: #921313;
+}
+
+/* line 530, ../scss/app.scss */
+.btn:active {
+  margin-top: 1px;
+  text-shadow: #333333 0 -1px 0;
+  border: 1px solid #253737;
+  background: #6da5a3;
+  background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+  color: #fff;
+  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+
+/* line 542, ../scss/app.scss */
+.footer_bg {
+  background-color: #222222;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+/* line 548, ../scss/app.scss */
+.footer_bg ul.a {
+  text-transform: uppercase;
+  color: #474747;
+  text-decoration: none;
 }

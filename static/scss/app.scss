@@ -342,7 +342,7 @@ html, body, p, div{
 .contact
 {
 	color: #fff;
-
+	
 		.contactimg{
 		background:url(../img/contact-bg.png) no-repeat;
 		background-size: cover;
@@ -352,15 +352,29 @@ html, body, p, div{
 		width: 100%;
 		
 		}
-		.callUsGroup
+
+		.contact_containter
 		{
-			
-			
-			margin-top: 300px;
-			margin-bottom: 300px;
-			width:50%;
-			vertical-align:middle;
-		
+			margin-top: 200px;
+			margin-bottom: 200px;
+
+				.callUsGroup
+				{
+							
+					width:400px;
+					vertical-align:middle;
+					float: left;
+
+				
+				}
+				.contact_form
+				{
+					
+					float: right;
+					width: 350px;
+					
+				}
+
 		}
 
 		.bottom_title
@@ -389,8 +403,152 @@ html, body, p, div{
 			float:left;
 			text-align:right;
 			width:200px;
-			margin-left:150px;
+			/* margin-left:150px; */
 		}
 
 
+}
+
+.form_column_left
+{
+
+	float: left;
+	width:250px;
+	height: auto;
+}
+
+.form_column_right
+{
+
+	float: right;
+	width:250px;
+}
+
+
+form {
+    margin-left:-247px;
+    margin-right:auto;
+    width: 530px;
+    height: 333px;
+    overflow: hidden; 
+    text-align: center;
+    float: left;
+}
+
+textarea{
+	background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px; 
+    height: 200px;
+    border-bottom: 1px solid white;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    color:#fff;
+    padding-right:20px;
+    padding-top:12px;
+    overflow:hidden;
+}
+
+input {
+    width: 276px;
+    height: 48px;
+    border-bottom: 1px solid white;
+    display:block;
+    color:#fff;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+input[type=submit] {
+    cursor:pointer;
+    font-size: 12px;
+}
+
+input.name {
+	background: rgba(255, 255, 255, 0); 
+	border: 0px;
+	border-bottom: 1px solid white;
+	margin-bottom: 26px;
+	color: #fff;
+}
+
+
+input.message {
+	  background: rgba(255, 255, 255, 0);
+	  height: 200px;
+	  
+}
+
+::-webkit-input-placeholder {
+	  color: #fff;
+
+}
+
+:-moz-placeholder{ 
+    color: #fff; 
+    
+}
+
+::-moz-placeholder {
+    color: #fff;
+
+}
+
+:-ms-input-placeholder {  
+	  color: #fff; 
+	
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus { 
+
+	background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+  	outline: 0px;
+  	
+}
+
+
+.btn {
+	 width: 100%;
+	 height: 30px;
+	 border:0px;
+	 float:right;
+     background: #B71C1C;
+    
+}
+
+.btn:hover {
+   border:0px;
+    background: #921313;
+    
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: #6da5a3;
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+
+.footer_bg{
+	background-color: #222222;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+
+	ul.a {
+    
+    text-transform: uppercase;
+    color: #474747;
+    text-decoration: none;
+	}
 }
