@@ -807,12 +807,17 @@ html, body, p, div {
   background-size: cover;
 }
 
-/* line 343, ../scss/app.scss */
+/* line 342, ../scss/app.scss */
 .contact {
   color: #fff;
 }
-/* line 347, ../scss/app.scss */
-.contact .contactimg {
+/* line 345, ../scss/app.scss */
+.contact .contact_container {
+  padding: 80px;
+  margin: auto;
+}
+/* line 349, ../scss/app.scss */
+.contact .contact_bg {
   background: url(../img/contact-bg.png) no-repeat;
   background-size: cover;
   position: relative;
@@ -820,74 +825,62 @@ html, body, p, div {
   display: block;
   width: 100%;
 }
-/* line 357, ../scss/app.scss */
-.contact .contact_containter {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-/* line 362, ../scss/app.scss */
-.contact .contact_containter .callUsGroup {
-  width: 400px;
-  vertical-align: middle;
-  float: left;
-}
-/* line 371, ../scss/app.scss */
-.contact .contact_containter .contact_form {
-  float: right;
-  width: 350px;
-}
-/* line 381, ../scss/app.scss */
-.contact .bottom_title {
+/* line 358, ../scss/app.scss */
+.contact .contact_info {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
-  float: top;
+  float: right;
+  text-align: right;
 }
-/* line 389, ../scss/app.scss */
-.contact .bottom_subtitle {
+/* line 366, ../scss/app.scss */
+.contact .contact_info_sub {
+  text-transform: none;
+  font-size: 12px;
   float: bottom;
+  text-align: right;
+}
+/* line 373, ../scss/app.scss */
+.contact .contact_info_icon {
+  float: right;
+  vertical-align: middle;
+  padding: 0px;
+  /* margin-bottom: 5px; */
+  text-align: center;
+  margin-left: -10px;
+}
+/* line 384, ../scss/app.scss */
+.contact .contact_info_icon_size {
+  font-size: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin: auto;
 }
 /* line 394, ../scss/app.scss */
-.contact .bottom_icon {
-  vertical-align: middle;
-  text-align: center;
-  margin: 0 0px;
-}
-/* line 402, ../scss/app.scss */
-.contact .bottom_title_container {
-  overflow: inherit;
-  float: left;
-  text-align: right;
-  width: 200px;
-  /* margin-left:150px; */
-}
-
-/* line 414, ../scss/app.scss */
-.form_column_left {
-  float: left;
-  width: 250px;
-  height: auto;
-}
-
-/* line 422, ../scss/app.scss */
-.form_column_right {
+.contact .form_pos {
+  /* margin-left: -79px; */
+  padding: 5px;
   float: right;
-  width: 333px;
+  margin: auto;
+  display: inline;
+  width: 100%;
 }
-
-/* line 430, ../scss/app.scss */
-form {
-  margin-left: -247px;
-  margin-right: auto;
-  width: 600px;
-  height: 333px;
-  overflow: hidden;
-  text-align: center;
-  float: left;
+/* line 404, ../scss/app.scss */
+.contact input[type=submit] {
+  cursor: pointer;
+  font-size: 12px;
+  width: 100%;
+  font-color: #fff;
 }
-
-/* line 440, ../scss/app.scss */
-textarea {
+/* line 412, ../scss/app.scss */
+.contact input {
+  border: 0px;
+  border-bottom: 1px solid white;
+}
+/* line 420, ../scss/app.scss */
+.contact .textarea {
   background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px;
   height: 94px;
   border-bottom: 1px solid white;
@@ -899,164 +892,97 @@ textarea {
   padding-right: 20px;
   padding-top: 12px;
   overflow: hidden;
+  width: 100%;
+  float: right;
 }
-
-/* line 453, ../scss/app.scss */
-textarea[type=message] {
-  height: 94px;
-}
-
-/* line 458, ../scss/app.scss */
-input {
-  width: 276px;
-  height: 48px;
+/* line 436, ../scss/app.scss */
+.contact .name {
+  background: rgba(255, 255, 255, 0) no-repeat scroll 16px 16px;
   border-bottom: 1px solid white;
   display: block;
   color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-
-/* line 472, ../scss/app.scss */
-input[type=submit] {
-  cursor: pointer;
-  font-size: 12px;
-}
-
-/* line 477, ../scss/app.scss */
-input.name {
-  background: rgba(255, 255, 255, 0);
-  border: 0px;
-  border-bottom: 1px solid white;
-  margin-bottom: 26px;
-  color: #fff;
-}
-
-/* line 486, ../scss/app.scss */
-input.message {
-  background: rgba(255, 255, 255, 0);
-  height: 94px;
-}
-
-/* line 492, ../scss/app.scss */
-::-webkit-input-placeholder {
-  color: #fff;
-}
-
-/* line 497, ../scss/app.scss */
-:-moz-placeholder {
-  color: #fff;
-}
-
-/* line 502, ../scss/app.scss */
-::-moz-placeholder {
-  color: #fff;
-}
-
-/* line 507, ../scss/app.scss */
-:-ms-input-placeholder {
-  color: #fff;
-}
-
-/* line 512, ../scss/app.scss */
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  background-color: rgba(0, 0, 0, 0.2);
+/* line 446, ../scss/app.scss */
+.contact input[type=text]:focus, .contact input[type=email]:focus, .contact textarea:focus {
+  background-color: transparent;
   overflow: hidden;
   outline: 0px;
 }
-
-/* line 522, ../scss/app.scss */
-.btn {
-  width: 100%;
-  height: 45px;
-  border: 0px;
-  float: right;
+/* line 452, ../scss/app.scss */
+.contact .button {
   background: #B71C1C;
-}
-
-/* line 531, ../scss/app.scss */
-.btn:hover {
+  width: 100%;
   border: 0px;
-  background: #921313;
 }
 
-/* line 537, ../scss/app.scss */
-.btn:active {
-  margin-top: 1px;
-  text-shadow: #333333 0 -1px 0;
-  border: 1px solid #253737;
-  background: #6da5a3;
-  background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
-  color: #fff;
-  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-  -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-  box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+/* line 459, ../scss/app.scss */
+.bold {
+  font-weight: bold;
 }
 
-/* line 549, ../scss/app.scss */
-.footer_bg {
+/* line 463, ../scss/app.scss */
+footer {
   background-color: #222222;
-  text-align: center;
+  color: #474747;
+  padding: 50px;
+  vertical-align: center;
   margin: auto;
-  padding: 30px 0px 60px 0;
+  text-align: center;
+}
+/* line 470, ../scss/app.scss */
+footer ul {
+  padding: 20px;
+}
+/* line 473, ../scss/app.scss */
+footer a, footer a:focus {
   color: #474747;
 }
-/* line 556, ../scss/app.scss */
-.footer_bg ul {
-  text-transform: uppercase;
-  display: inline-flex;
-}
-/* line 561, ../scss/app.scss */
-.footer_bg ul li {
+/* line 477, ../scss/app.scss */
+footer li {
   list-style: disc;
   padding: 0;
   margin: 0 0 0 30px;
   width: auto;
+  display: inline;
+  text-align: center;
 }
-/* line 567, ../scss/app.scss */
-.footer_bg ul li:first-child {
+/* line 485, ../scss/app.scss */
+footer li:first-child {
   list-style: none;
 }
-/* line 572, ../scss/app.scss */
-.footer_bg ul li a {
-  color: #474747;
-  font-weight: bold;
-  text-decoration: none;
-}
-/* line 578, ../scss/app.scss */
-.footer_bg li:not(.has-form) {
+/* line 490, ../scss/app.scss */
+footer li:not(.has-form) {
   background: none;
 }
-/* line 580, ../scss/app.scss */
-.footer_bg li:not(.has-form) a:not(.button) {
+/* line 492, ../scss/app.scss */
+footer li:not(.has-form) a:not(.button) {
   background: none;
   text-transform: uppercase;
   font-size: 14px;
   padding: 0 10px;
+  color: #474747;
 }
-/* line 585, ../scss/app.scss */
-.footer_bg li:not(.has-form) a:not(.button):hover {
+/* line 498, ../scss/app.scss */
+footer li:not(.has-form) a:not(.button):hover {
   background: none;
 }
-/* line 591, ../scss/app.scss */
-.footer_bg li:not(.has-form).active a:not(.button) {
+/* line 504, ../scss/app.scss */
+footer li:not(.has-form).active a:not(.button) {
   padding: 0;
   background: none;
 }
-/* line 595, ../scss/app.scss */
-.footer_bg li:not(.has-form).active a:not(.button):hover {
+/* line 508, ../scss/app.scss */
+footer li:not(.has-form).active a:not(.button):hover {
   background: none;
 }
-/* line 601, ../scss/app.scss */
-.footer_bg li:not(.has-form):before {
+/* line 514, ../scss/app.scss */
+footer li:not(.has-form):before {
   color: #474747;
 }
-/* line 607, ../scss/app.scss */
-.footer_bg .icon_space {
-  padding: 0 20px 10px 5px;
-  color: #474747;
+/* line 519, ../scss/app.scss */
+footer .social_icon {
+  margin: 10px;
 }
